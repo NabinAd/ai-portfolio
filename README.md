@@ -9,7 +9,7 @@ Ziel dieser Projekte war es, die Funktionsweise von RAG-Architekturen sowie Mult
 
 | Projekt | Worum geht es | Technik |
 |---|---|---|
-| [RAG-Assistent](rag-assistant/) | Fragen an eigene PDFs stellen. Die Antworten kommen nur aus den Dokumenten. | Streamlit, LangChain, Chroma, Ollama |
+| [RAG-Assistent](https://github.com/NabinAd/ai-portfolio/tree/rag-assistant) | Fragen an eigene PDFs stellen. Die Antworten kommen nur aus den Dokumenten. | Streamlit, LangChain, Chroma, Ollama |
 | [Ticket-Agent](ticket-agent/) | Ein Support-Ticket klassifizieren, eine Antwort entwerfen und entscheiden, ob eskaliert wird. | CrewAI, Ollama |
 
 ## Voraussetzungen (für beide Projekte)
