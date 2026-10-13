@@ -1,6 +1,7 @@
 # RAG-Assistent
 
-Ein Chat mit eigenen PDF-Dokumenten. Man lädt PDFs hoch, stellt Fragen, und das Modell antwortet nur auf Basis dieser Dokumente. Steht die Antwort nicht darin, sagt es das ehrlich. Alles läuft lokal mit Ollama.
+Ein Chat mit eigenen PDF-Dokumenten. Man lädt PDFs hoch, stellt Fragen, und das Modell antwortet nur auf Basis dieser Dokumente. 
+Steht die Antwort nicht darin, sagt es das ehrlich. Alles läuft lokal mit Ollama.
 
 <!-- TODO: Screenshot oder kurzes GIF der App einfügen:
 ![Screenshot](docs/screenshot.png)
