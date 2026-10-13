@@ -45,10 +45,11 @@ Python, Streamlit, LangChain, Chroma, Ollama (`llama3.2` für Antworten, `nomic-
 ## Setup
 
 ```powershell
-git clone https://github.com/NabinAd/ai-portfolio
-cd ai-portfolio/rag-assistant
 
-python -3.12 -m venv .venv
+git clone https://github.com/NabinAd/ai-portfolio
+cd ai-portfolio/rag-assistent
+
+py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 python -m pip install --upgrade pip
@@ -58,6 +59,7 @@ ollama pull llama3.2
 ollama pull nomic-embed-text
 
 streamlit run app.py
+  
 ```
 
 Ollama muss dabei im Hintergrund laufen.
