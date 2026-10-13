@@ -1,10 +1,10 @@
 
 # Lokale RAG-Datenbank und private Dokumente
-rag_assistent/chroma_db/
-rag_assistent/docs/*
+rag-assistent/chroma_db/
+rag-assistent/docs/*
 
 # Leeren Dokumentenordner bei Bedarf beibehalten
-!rag_assistent/docs/.gitkeep
+!rag-assistent/docs/.gitkeep
 
 # Umgebungsvariablen und lokale Konfiguration
 .env
