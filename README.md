@@ -14,7 +14,7 @@ Ziel dieser Projekte war es, die Funktionsweise von RAG-Architekturen sowie Mult
 
 ## Voraussetzungen (für beide Projekte)
 
-- Python  z. B. 3.14.6 , 3.12
+- Python 3.12
 - [Ollama](https://ollama.com) installiert und gestartet
 - Modelle laden:
   ```
