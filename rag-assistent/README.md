@@ -48,9 +48,11 @@ Python, Streamlit, LangChain, Chroma, Ollama (`llama3.2` für Antworten, `nomic-
 git clone https://github.com/NabinAd/ai-portfolio
 cd ai-portfolio/rag-assistant
 
-python -m venv .venv
+python -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 
 ollama pull llama3.2
 ollama pull nomic-embed-text
