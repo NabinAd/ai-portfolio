@@ -3,10 +3,6 @@
 Ein Chat mit eigenen PDF-Dokumenten. Man lädt PDFs hoch, stellt Fragen, und das Modell antwortet nur auf Basis dieser Dokumente. 
 Steht die Antwort nicht darin, sagt es das ehrlich. Alles läuft lokal mit Ollama.
 
-<!-- TODO: Screenshot oder kurzes GIF der App einfügen:
-![Screenshot](docs/screenshot.png)
-Lege das Bild in einen Ordner, der nicht in der .gitignore steht (z. B. assets/). -->
-
 ## So funktioniert es
 
 ```mermaid
@@ -35,8 +31,6 @@ flowchart LR
 - Einstellungen in der Sidebar: Anzahl der Treffer (k) und Temperature
 - Button zum Zurücksetzen der Wissensbasis
 - Die Datenbank bleibt gespeichert, die PDFs müssen nicht bei jedem Start neu verarbeitet werden
-
-<!-- TODO: Prüfe vor dem Push, ob jeder Punkt wirklich funktioniert. Streiche, was nicht stimmt. -->
 
 ## Technik
 
@@ -79,18 +73,6 @@ Ollama muss dabei im Hintergrund laufen.
 | `docs/` | Eigene PDFs für den Prototyp (nicht im Repo) |
 | `chroma_db/` | Wird automatisch erzeugt (nicht im Repo) |
 
-## Entscheidungen
-
-<!-- TODO: Schreibe das in eigenen Worten, genau diese Fragen kommen im Interview. -->
-- **Chunk-Größe 1000, Überlappung 200:** groß genug, dass ein Abschnitt seinen Zusammenhang behält, mit Überlappung, damit an den Schnittstellen keine Information verloren geht.
-- **Lokale Modelle:** keine Kosten, keine Dokumente verlassen den Rechner.
-- **Prompt:** Das Modell soll nur aus dem Kontext antworten und sonst zugeben, dass es nichts weiß. Das verringert erfundene Antworten.
-
-## Grenzen
-
-<!-- TODO: Halte diese Liste aktuell. Entferne Punkte, die du behoben hast. -->
-- Der Chat hat kein Gedächtnis: Jede Frage wird einzeln beantwortet, der Verlauf wird nur angezeigt.
-- Die angezeigten Quellen nennen nur den Dateinamen, keine Seitenzahl.
 - Nur PDFs mit Text. Gescannte PDFs ohne Textebene funktionieren nicht.
 - Dieselbe PDF mehrfach hochzuladen erzeugt doppelte Chunks.
 - `nomic-embed-text` ist überwiegend auf Englisch trainiert, bei deutschen Dokumenten kann die Suche schwächer sein.
