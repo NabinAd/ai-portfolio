@@ -53,9 +53,6 @@ Mit freundlichen Grüßen,
 Customer Support
 [Unternehmen]"
 
-<!-- TODO: Führe das Skript aus und füge hier die echte Ausgabe ein (Klassifikation, Antwort, Entscheidung).
-Am besten auch ein Beispiel mit einem kritischen Ticket, bei dem der Manager eskaliert. Das zeigt, dass die Entscheidung wirklich vom Inhalt abhängt. -->
-
 ## Technik
 
 Python, CrewAI, Ollama (`llama3.2`, Temperature 0.2 für stabilere Klassifikation)
@@ -78,17 +75,3 @@ python ticket_agent.py
 
 Ollama muss im Hintergrund laufen (Standard: `http://localhost:11434`). Eigene Tickets trägst du in der Liste `test_tickets` am Ende von `ticket_agent.py` ein.
 
-## Grenzen
-
-<!-- TODO: Halte diese Liste aktuell, streiche, was du behoben hast. -->
-- Die Ausgaben sind freier Text, nicht strukturiert. Das Ergebnis lässt sich nicht direkt weiterverarbeiten.
-- Es gibt bisher keine Auswertung, wie oft die Klassifikation stimmt. Als Beispiel ist nur ein Ticket hinterlegt.
-- Keine Anbindung an ein echtes Ticket-System, die Tickets stehen im Code.
-- Der Responder kennt keine Firmendokumente und kann deshalb keine konkreten Produktfakten nennen.
-- Die Qualität hängt vom kleinen lokalen Modell ab, bei längeren Tickets kann es ungenau werden.
-
-## Nächste Schritte
-
-<!-- TODO: Schreibe nur auf, was du wirklich vorhast. Das ist eine Idee, kein Versprechen. -->
-- Strukturierte Ausgabe mit Pydantic (`output_pydantic`)
-- 20 bis 30 Test-Tickets aus einer CSV verarbeiten und die Klassifikation gegen eigene Labels prüfen
