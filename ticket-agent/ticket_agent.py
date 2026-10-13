@@ -1,9 +1,9 @@
 # ticket_agent.py
 from crewai import Agent, Task, Crew, Process, LLM # crew = members, process = ablauf
 # from langchain_ollama import ChatOllama crewai hat es schon integriet 
-import pandas as pd
-from datetime import datetime # zeitstempel für berrichte zu erstellen 
-import os
+#import pandas as pd  # nachbessern
+#from datetime import datetime # zeitstempel für berrichte zu erstellen 
+#import os
 
 # LLM Setup (konsistent & deterministischer)
 ollama_llm = LLM(
